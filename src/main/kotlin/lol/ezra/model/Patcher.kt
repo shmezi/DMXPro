@@ -5,11 +5,13 @@ import lol.ezra.model.fixture.FixtureType
 
 class Patcher(val banks: MutableList<FixtureBrand>) {
    /**
-    * Patched fixtures, dmx channel assignment is done by another process, internally we use an ID as the channel of the fixture
     * ID of fixture | Fixture type ID
     * */
-
    private val patched = mutableMapOf<Int, String>()
+
+
+
+
 
    /**
     * Each show file stores a list of fixture types that are taken from the local fixture bank.

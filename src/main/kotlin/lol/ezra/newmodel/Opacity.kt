@@ -1,4 +1,4 @@
-package lol.ezra.model
+package lol.ezra.newmodel
 
 import kotlin.math.max
 import kotlin.math.min

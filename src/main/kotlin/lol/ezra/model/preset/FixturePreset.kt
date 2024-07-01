@@ -1,6 +1,6 @@
 package lol.ezra.model.preset
 
-import lol.ezra.model.Opacity
+import lol.ezra.newmodel.Opacity
 
 /**
  * Represents a preset for an individual fixture
