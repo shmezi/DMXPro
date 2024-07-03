@@ -1,13 +1,19 @@
 package lol.ezra.model
 
-import lol.ezra.model.fixture.FixtureBrand
 import lol.ezra.model.fixture.FixtureType
+import lol.ezra.model.fixture.Universe
 
-class Patcher(val banks: MutableList<FixtureBrand>) {
+class Patcher() {
    /**
     * ID of fixture | Fixture type ID
     * */
    private val patched = mutableMapOf<Int, String>()
+   val mapping = mutableMapOf < Int, Universe> ()
+
+   fun patch() {
+
+   }
+
 
 
 
@@ -18,5 +24,7 @@ class Patcher(val banks: MutableList<FixtureBrand>) {
     * This makes sure that the same show file will function the same on multiple machines.
     * Please makes sure in the future to make it not able to add remove without safety of this.
     */
-   val fixtureBank = mutableMapOf<String, FixtureType>()
+   val fixtureBank = mutableMapOf<String, FixtureType>().apply {
+
+   }
 }

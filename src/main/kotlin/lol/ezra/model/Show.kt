@@ -13,7 +13,7 @@ import lol.ezra.model.preset.Preset
  * Fixtures will be stored based on a system that will be later created
  */
 class Show(
-   val metaData: ShowMetaData,
+   val meta: ShowMetaData,
    private val patcher: Patcher,
    /**
     * Groups that have been defined
