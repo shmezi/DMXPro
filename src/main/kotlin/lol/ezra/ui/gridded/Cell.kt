@@ -2,7 +2,10 @@ package lol.ezra.ui.gridded
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.gestures.AnchoredDraggableState
+import androidx.compose.foundation.gestures.anchoredDraggable
 import androidx.compose.foundation.gestures.detectDragGestures
+import androidx.compose.foundation.gestures.rememberDraggableState
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.offset
@@ -38,6 +41,7 @@ data class Cell(
    fun build() {
       var offsetX by remember { mutableStateOf(0f) }
       var offsetY by remember { mutableStateOf(0f) }
+
       Box(
          modifier = modifier/*.clip(RoundedCornerShape(10))*/
             .size(context.cellWidth(columns).dp, context.cellHeight(rows).dp)
@@ -54,8 +58,7 @@ data class Cell(
             .border(
                3.dp, Color.Black,
                RoundedCornerShape(10)
-            )
-         ,
+            ),
          content = contents
       )
    }

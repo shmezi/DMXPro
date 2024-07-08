@@ -13,6 +13,7 @@ import lol.ezra.ui.gridded.GridContext
 fun main() = application {
    Window(onCloseRequest = ::exitApplication) {
       Theme {
+
          Grid(modifier = Modifier.background(Color.Cyan), GridContext(30, 6)) {
             Cell(0, 0) {
                Column {
@@ -21,21 +22,21 @@ fun main() = application {
                   Button({}) { Text("Click me here!") }
                }
             }
-            Cell(3, 5, 4,3) {
+            Cell(3, 5, 4, 3) {
                Column {
                   Text("Box c with some cool shit here!!!")
                   Text("Another text is here :)")
                   Button({}) { Text("Click me here!") }
                }
             }
-            Cell(0, 2, 4,1) {
+            Cell(0, 2, 4, 1) {
                Column {
                   Text("Box c with some cool shit here!!!")
                   Text("Another text is here :)")
                   Button({}) { Text("Click me here!") }
                }
             }
-            Cell(0, 1, 4,1) {
+            Cell(0, 1, 4, 1) {
                Column {
                   Text("Box c with some cool shit here!!!")
                   Text("Another text is here :)")

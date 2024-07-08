@@ -1,22 +1,15 @@
 package lol.ezra.ui.gridded
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
-import androidx.compose.foundation.gestures.Orientation
-import androidx.compose.foundation.gestures.draggable
-import androidx.compose.foundation.gestures.rememberDraggableState
 import androidx.compose.foundation.layout.BoxScope
-import androidx.compose.foundation.layout.offset
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.IntOffset
-import androidx.compose.ui.unit.dp
 import lol.ezra.utils.pq
 import kotlin.math.max
 import kotlin.math.min
-import kotlin.math.roundToInt
 import lol.ezra.ui.gridded.Cell as C
 
 /**
@@ -48,6 +41,12 @@ class GridContext(
    fun horizontalOffset() = (gridWidth.value - singleCellSize() * columns)
    fun verticalOffset() = (gridHeight.value - singleCellSize() * rows)
 
+   /**
+    * @param x Actual X position
+    */
+//   fun posAt(x: Int, y: Int): Pair<Int, Int> {
+//      x
+//   }
 
    /**TODO Change stuff here :)
     * Represents a cell in a [Grid]
@@ -72,8 +71,7 @@ class GridContext(
          columns,
          rows,
          this,
-         modifier
-            ,
+         modifier,
 
          contents
       )
