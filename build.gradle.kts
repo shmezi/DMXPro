@@ -25,10 +25,12 @@ dependencies {
 
    // Navigator
    implementation("cafe.adriel.voyager:voyager-navigator:$voyagerVersion")
+   implementation("co.touchlab:kermit:2.0.4") //Add latest version
 
    // Screen Model
    implementation("cafe.adriel.voyager:voyager-screenmodel:$voyagerVersion")
    implementation("cafe.adriel.voyager:voyager-tab-navigator:$voyagerVersion")
+   implementation("io.github.theapache64:rebugger:1.0.0-rc03")
 
 }
 
