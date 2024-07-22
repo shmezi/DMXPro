@@ -208,6 +208,7 @@ abstract class Cellable(
          .clip(RoundedCornerShape(10)).size(graphicalWidth().dp, graphicalHeight().dp)
          .background(color, RoundedCornerShape(10)).border(3.dp, Color.Black, RoundedCornerShape(10)).run {
             if (shift) pointerInput(Unit) {
+
                detectDragGestures(
                   onDragStart = ::dragStart, onDrag = ::drag, onDragEnd = ::dragEnd
                )

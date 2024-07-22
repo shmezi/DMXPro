@@ -7,6 +7,8 @@ import androidx.compose.ui.layout.Measurable
 import androidx.compose.ui.layout.MeasureResult
 import androidx.compose.ui.layout.MeasureScope
 import androidx.compose.ui.unit.Constraints
+import kotlinx.serialization.Serializable
+
 
 class GridContext private constructor() {
    /**

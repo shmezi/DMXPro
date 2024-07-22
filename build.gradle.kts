@@ -1,8 +1,10 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-   kotlin("jvm")
-   id("org.jetbrains.compose")
+   kotlin("jvm") version "1.9.22"
+   id("org.jetbrains.compose") version "1.5.12"
+   id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
+
 }
 
 val voyagerVersion = "1.0.0"
@@ -26,6 +28,7 @@ dependencies {
    // Navigator
    implementation("cafe.adriel.voyager:voyager-navigator:$voyagerVersion")
    implementation("co.touchlab:kermit:2.0.4") //Add latest version
+   implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 
    // Screen Model
    implementation("cafe.adriel.voyager:voyager-screenmodel:$voyagerVersion")

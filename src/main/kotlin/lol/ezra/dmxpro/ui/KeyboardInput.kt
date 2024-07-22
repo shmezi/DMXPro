@@ -7,7 +7,7 @@ import androidx.compose.ui.input.key.*
 
 object KeyboardInput {
    private val active = mutableSetOf<Key>()
-   var shift by mutableStateOf(false)
+   var shift by mutableStateOf(true)
    var alt by mutableStateOf(false)
    var cntrl by mutableStateOf(false)
 

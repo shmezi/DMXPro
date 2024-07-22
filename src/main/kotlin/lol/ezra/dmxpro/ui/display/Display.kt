@@ -11,7 +11,10 @@ import lol.ezra.dmxpro.ui.display.gridded.grid.GridContext
 import lol.ezra.dmxpro.ui.display.gridded.grid.GridContext.Companion.Grid
 import lol.ezra.dmxpro.utils.pq
 
-class Display(val id: String) {
+class Display(
+   val id: String,
+   grid: GridContext
+) {
    var open by mutableStateOf(true)
 
    @Composable
